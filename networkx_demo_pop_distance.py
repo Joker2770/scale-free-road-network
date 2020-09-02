@@ -15,7 +15,7 @@ G=nx.Graph() #创建了一个没有节点和边的空图
 posi=pd.read_excel("./2015Cities-CHINA_modify20180323.xlsx") # 读取数据
 
 # 原始数据有337组数据，我只选择了268个城市的数据
-lat = np.array(posi["lat"][0:268],dtype=float)    # 获取维度之维度值
+lat = np.array(posi["lat"][0:268],dtype=float)    # 获取纬度值
 lon = np.array(posi["lon"][0:268],dtype=float)    # 获取经度值
 pop = np.array(posi["pop"][0:268],dtype=float)    # 获取人口数，转化为numpy浮点型
 road_density = np.array(posi["density2012"][0:268],dtype=float)
